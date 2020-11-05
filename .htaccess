@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^sondocu.com [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.sondocu.com [NC]
+RewriteRule ^(.*)$ https://sondocu.juspedia.es/$1 [L,R=301,NC] 
